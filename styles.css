@@ -583,6 +583,12 @@ p {
   .gallery {
     grid-template-columns: 1fr;
   }
+
+  .topbar .topbar-left {
+    display: flex;
+    flex-direction: column;
+
+  }
 }
 
 @media (max-width: 1024px) {
