@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Piomar Invest — Nowe domy i inwestycje</title>
+  <meta name="description" content="Piomar Invest — kameralne, nowoczesne domy w atrakcyjnych lokalizacjach. Sprawdź aktualne inwestycje i skontaktuj się z nami." />
+  <link rel="preload" as="image" href="assets/hero.jpg">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container row">
+      <div class="topbar-left">
+        <span>📞 <a href="tel:+48792750251">+48 792 750 251</a></span>
+        <span>✉️ <a href="mailto:piomarinvest@interia.pl">piomarinvest@interia.pl</a></span>
+      </div>
+      <div class="topbar-right">
+        <a class="btn btn-small" href="#kontakt">Umów prezentację</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="container row">
+      <a href="#" class="brand">
+        <img src="assets/logo.jpg" alt="Piomar Invest logo" />
+        <span>PIOMAR INVEST</span>
+      </a>
+      <div class="nav-links">
+        <a href="#onas">O nas</a>
+        <a href="#inwestycje">Inwestycje</a>
+        <a href="#kontakt" class="btn">Kontakt</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" style="--bg:url('assets/hero.jpg')">
+    <div class="container hero-inner">
+      <h1>Kameralne domy w zabudowie szeregowej</h1>
+      <p>Nowoczesna architektura, prywatne ogrody i świetna komunikacja.
+         Odkryj nowe miejsce do życia z <strong>Piomar Invest</strong>.</p>
+      <div class="cta">
+        <a href="#inwestycje" class="btn btn-primary">Zobacz inwestycje</a>
+        <a href="#kontakt" class="btn btn-secondary">Zapytaj o ofertę</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="onas" class="section">
+    <div class="container">
+      <div class="grid-2">
+        <div>
+          <h2>O deweloperze</h2>
+          <p>Budujemy kameralne osiedla o ponadczasowej formie. Stawiamy na jakość materiałów,
+          funkcjonalne układy i transparentną komunikację na każdym etapie — od pierwszego kontaktu
+          po przekazanie kluczy.</p>
+          <ul class="checklist">
+            <li>Terminowa realizacja i pewne harmonogramy</li>
+            <li>Spójna estetyka i ergonomiczne wnętrza</li>
+            <li>Rzetelne umowy i czytelna dokumentacja</li>
+          </ul>
+        </div>
+        <div class="features">
+          <div class="card">
+            <div class="icon">🏗️</div>
+            <h3>Jakość wykonania</h3>
+            <p>Sprawdzone technologie, solidne ekipy i kontrola na budowie.</p>
+          </div>
+          <div class="card">
+            <div class="icon">🌿</div>
+            <h3>Komfort i zieleń</h3>
+            <p>Ogrody, tarasy i miejsca do odpoczynku dla całej rodziny.</p>
+          </div>
+          <div class="card">
+            <div class="icon">🔑</div>
+            <h3>Gotowość do odbioru</h3>
+            <p>Przemyślane przyłącza, miejsca postojowe i przejrzyste odbiory.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="inwestycje" class="section section-muted">
+    <div class="container">
+      <h2>Aktualne inwestycje</h2>
+      <div class="cards" id="investments-list">
+        <!-- JS will render investment cards here -->
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt" class="section">
+    <div class="container grid-2">
+      <div>
+        <h2>Skontaktuj się z nami</h2>
+        <p>Masz pytania o dostępność, standard wykończenia lub finansowanie?
+        Zostaw wiadomość — oddzwonimy tego samego dnia.</p>
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="icon">📞</div>
+            <div><strong>Telefon</strong><br><a href="tel:+48792750251">+48 792 750 251</a></div>
+          </div>
+          <div class="contact-card">
+            <div class="icon">✉️</div>
+            <div><strong>E-mail</strong><br><a href="mailto:piomarinvest@interia.pl">piomarinvest@interia.pl</a></div>
+          </div>
+          <div class="contact-card">
+            <div class="icon">📍</div>
+            <div><strong>Adres:</strong><br>Architektów 1, 84-241 Gościcino</div>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" action="https://formspree.io/f/mjkapwrp" method="POST">
+        <label>Imię i nazwisko<input required name="name" /></label>
+        <label>Telefon<input name="phone" /></label>
+        <label>E-mail<input type="email" required name="email" /></label>
+        <label>Wiadomość<textarea name="message" rows="5" placeholder="Interesuje mnie oferta..."></textarea></label>
+        <button class="btn btn-primary" type="submit">Wyślij</button>
+        <p class="notice">Wysyłając formularz wyrażasz zgodę na kontakt w sprawie oferty.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container row">
+	  <div class="container column">
+        <div class="brand small">
+          <img src="assets/logo.jpg" alt="" />
+          <span>PIOMAR INVEST Sp. z o.o.</span>
+        </div>
+        <div class="company-info">
+          <span><strong>NIP:</strong> 5882524089</span>
+          <span><strong>REGON:</strong> 540595185</span>
+        </div>
+	  </div>
+      <div class="copy">© 2025 Piomar Invest. Wszelkie prawa zastrzeżone.</div>
+      <div class="footer-links">
+        <a href="#onas">O nas</a>
+        <a href="#inwestycje">Inwestycje</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Investment Modal -->
+  <div id="investment-modal" class="modal hidden" aria-hidden="true" role="dialog">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-content" role="document">
+      <button class="modal-close" title="Zamknij" data-close>&times;</button>
+      <div id="modal-body"><!-- JS fills --></div>
+    </div>
+  </div>
+
+  <a href="#kontakt" class="float-cta">Zapytaj o ofertę</a>
+
+  <script>
+    // --- Simple data layer ---
+    const INVESTMENTS = [
+      {
+        id: "rumia-10",
+        title: "Rumia — Dunikowskiego",
+        cover: "assets/render_front.jpg",
+        location: "Rumia",
+        status: "W sprzedaży",
+        price: "Cena na zapytanie",
+        area: "ok. 95–110 m²",
+        rooms: "4–5",
+        features: ["Ogródki i tarasy", "Miejsca postojowe", "Bardzo zielone otoczenie"],
+        description: "Kameralny zespół 6 segmentów w zabudowie szeregowej. Nowoczesna architektura, wysoki standard i funkcjonalne układy.",
+        gallery: [
+          "assets/render_front.jpg",
+          "assets/hero.jpg",
+          "assets/render_back.jpg",
+          "assets/plan_floor_1.jpg",
+          "assets/plan_floor_2.jpg",
+          "assets/site_plan.jpg"
+        ],
+        units: [
+          {id:"10A", area:"ok. 100 m²", garden:"tak", status:"Wolny", price:"na zapytanie"},
+          {id:"10B", area:"ok. 100 m²", garden:"tak", status:"Wolny", price:"na zapytanie"},
+          {id:"10C", area:"ok. 100 m²", garden:"tak", status:"Wolny", price:"na zapytanie"},
+          {id:"10D", area:"ok. 100 m²", garden:"tak", status:"Wolny", price:"na zapytanie"},
+          {id:"10E", area:"ok. 100 m²", garden:"tak", status:"Sprzedany", price:"—"},
+          {id:"10F", area:"ok. 100 m²", garden:"tak", status:"Sprzedany", price:"—"}
+        ]
+      },
+      {
+        id: "rumia-10",
+        title: "Rumia — Dunikowskiego",
+        cover: "assets/render_front.jpg",
+        location: "Rumia",
+        status: "W sprzedaży",
+        price: "Cena na zapytanie",
+        area: "ok. 95–110 m²",
+        rooms: "4–5",
+        features: ["Ogródki i tarasy", "Miejsca postojowe", "Bardzo zielone otoczenie"],
+        description: "Kameralny zespół 6 segmentów w zabudowie szeregowej. Nowoczesna architektura, wysoki standard i funkcjonalne układy.",
+        gallery: [
+          "assets/render_front.jpg",
+          "assets/hero.jpg",
+          "assets/render_back.jpg",
+          "assets/plan_floor_1.jpg",
+          "assets/plan_floor_2.jpg",
+          "assets/site_plan.jpg"
+        ],
+        units: [
+          {id:"10A", area:"ok. 100 m²", garden:"tak", status:"Wolny", price:"na zapytanie"},
+          {id:"10B", area:"ok. 100 m²", garden:"tak", status:"Wolny", price:"na zapytanie"},
+          {id:"10C", area:"ok. 100 m²", garden:"tak", status:"Wolny", price:"na zapytanie"},
+          {id:"10D", area:"ok. 100 m²", garden:"tak", status:"Wolny", price:"na zapytanie"},
+          {id:"10E", area:"ok. 100 m²", garden:"tak", status:"Sprzedany", price:"—"},
+          {id:"10F", area:"ok. 100 m²", garden:"tak", status:"Sprzedany", price:"—"}
+        ]
+      }
+    ];
+
+    // --- Render investment cards ---
+    const list = document.getElementById('investments-list');
+    INVESTMENTS.forEach(inv => { 
+      const card = document.createElement('article');
+      card.className = 'inv-card';
+      card.innerHTML = `
+        <img loading="lazy" src="${inv.cover}" alt="${inv.title}">
+        <div class="inv-card-body">
+          <div class="inv-meta"><span class="badge">${inv.status}</span><span>${inv.location}</span></div>
+          <h3>${inv.title}</h3>
+          <div class="inv-specs">
+            <span>Metraż: ${inv.area}</span>
+            <span>Pokoje: ${inv.rooms}</span>
+            <span class="price">${inv.price}</span>
+          </div>
+          <div class="actions">
+            <button class="btn btn-primary" data-open="${inv.id}">Szczegóły</button>
+            <a class="btn btn-secondary" href="#kontakt">Zapytaj</a>
+          </div>
+        </div>`;
+      list.appendChild(card);
+    });
+
+    // --- Modal logic ---
+    const modal = document.getElementById('investment-modal');
+    const modalBody = document.getElementById('modal-body');
+
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest('[data-open]');
+      if (btn) {
+        const id = btn.getAttribute('data-open');
+        const inv = INVESTMENTS.find(i => i.id === id);
+        openModal(inv);
+      }
+      if (e.target.matches('[data-close]')) closeModal();
+    });
+
+    function openModal(inv) {
+      modalBody.innerHTML = `
+        <div class="modal-header">
+          <h3>${inv.title}</h3>
+          <div class="muted">${inv.location} • ${inv.status}</div>
+        </div>
+        <div class="modal-grid">
+          <div>
+            <p>${inv.description}</p>
+            <ul class="checklist">${inv.features.map(f=>'<li>'+f+'</li>').join('')}</ul>
+            <div class="pill-row">
+              <span class="pill">Metraż: ${inv.area}</span>
+              <span class="pill">Pokoje: ${inv.rooms}</span>
+              <span class="pill price">${inv.price}</span>
+            </div>
+            <h4>Karta lokali</h4>
+            <div class="table-wrap">
+              <table class="table">
+                <thead><tr><th>Lokal</th><th>Powierzchnia</th><th>Ogródek</th><th>Status</th><th>Cena</th></tr></thead>
+                <tbody>
+                  ${inv.units.map(u => `<tr>
+                    <td>${u.id}</td><td>${u.area}</td><td>${u.garden}</td><td><span class="badge ${u.status==='Sprzedany'?'danger':'success'}">${u.status}</span></td><td>${u.price}</td>
+                  </tr>`).join('')}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div>
+            <div class="gallery" id="gal">${inv.gallery.map(g=>`<a href="${g}" class="gal-item"><img loading="lazy" src="${g}" alt=""></a>`).join('')}</div>
+          </div>
+        </div>
+        <div class="modal-cta">
+          <a href="#kontakt" class="btn btn-primary" data-close>Zapytaj o dostępność</a>
+          <a href="tel:+48792750251" class="btn btn-secondary">Zadzwoń</a>
+        </div>`;
+
+      // Lightbox
+      modalBody.querySelectorAll('.gal-item').forEach(a => {
+        a.addEventListener('click', ev => {
+          ev.preventDefault();
+          const src = a.getAttribute('href');
+          const viewer = document.createElement('div');
+          viewer.className = 'lightbox';
+          viewer.innerHTML = `<div class="lightbox-backdrop"></div><img src="${src}" alt=""><button class="lightbox-x" title="Zamknij">&times;</button>`;
+          viewer.addEventListener('click', e => {
+            if (e.target.classList.contains('lightbox-backdrop') || e.target.classList.contains('lightbox-x')) viewer.remove();
+          });
+          document.body.appendChild(viewer);
+        });
+      });
+
+      modal.classList.remove('hidden');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal() {
+      modal.classList.add('hidden');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+  </script>
+</body>
+</html>
