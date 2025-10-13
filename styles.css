@@ -603,4 +603,8 @@ p {
   }
 }
 
+td.price {
+  text-wrap: nowrap;
+}
+
 

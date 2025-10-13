@@ -204,11 +204,11 @@
         <div class="inv-card-body">
           <div class="inv-meta"><span class="badge">${inv.status}</span><span>${inv.location}</span></div>
           <h3>${inv.title}</h3>
-          <div class="inv-specs">
-            <span>Metraż: ${inv.area}</span>
-            <span>Pokoje: ${inv.rooms}</span>
-            <span class="price">${inv.price}</span>
-          </div>
+          <!-- <div class="inv-specs">
+          //   <span>Metraż: ${inv.area}</span>
+          //   <span>Pokoje: ${inv.rooms}</span>
+          //   <span class="price">${inv.price}</span>
+          // </div> -->
           <div class="actions">
             <button class="btn btn-primary" data-open="${inv.id}">Szczegóły</button>
             <a class="btn btn-secondary" href="#kontakt">Zapytaj</a>
@@ -241,18 +241,18 @@
           <div>
             <p>${inv.description}</p>
             <ul class="checklist">${inv.features.map(f=>'<li>'+f+'</li>').join('')}</ul>
-            <div class="pill-row">
+            <!-- <div class="pill-row">
               <span class="pill">Metraż: ${inv.area}</span>
               <span class="pill">Pokoje: ${inv.rooms}</span>
               <span class="pill price">${inv.price}</span>
-            </div>
+            </div> -->
             <h4>Karta lokali</h4>
             <div class="table-wrap">
               <table class="table">
                 <thead><tr><th>Lokal</th><th>Powierzchnia</th><th>Ogródek</th><th>Balkon</th><th>Status</th><th>Cena</th></tr></thead>
                 <tbody>
                   ${inv.units.map(u => `<tr>
-                    <td>${u.id}</td><td>${u.area}</td><td>${u.garden}</td><td>${u.balkon}</td><td><span class="badge ${u.status==='Sprzedany'?'danger':'success'}">${u.status}</span></td><td>${u.price}</td>
+                    <td>${u.id}</td><td>${u.area}</td><td>${u.garden}</td><td>${u.balkon}</td><td><span class="badge ${u.status==='Sprzedany'?'danger':'success'}">${u.status}</span></td><td class="price">${u.price}</td>
                   </tr>`).join('')}
                 </tbody>
               </table>
