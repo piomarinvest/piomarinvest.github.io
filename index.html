@@ -178,35 +178,8 @@
           "assets/site_plan.jpg"
         ],
         units: [
-          {id:"10A", area:"ok. 100 m²", garden:"tak", status:"Wolny", price:"123 456zł"},
-          {id:"10B", area:"ok. 100 m²", garden:"tak", status:"Wolny", price:"na zapytanie"},
-          {id:"10C", area:"ok. 100 m²", garden:"tak", status:"Wolny", price:"na zapytanie"},
-          {id:"10D", area:"ok. 100 m²", garden:"tak", status:"Wolny", price:"na zapytanie"},
-          {id:"10E", area:"ok. 100 m²", garden:"tak", status:"Sprzedany", price:"—"},
-          {id:"10F", area:"ok. 100 m²", garden:"tak", status:"Sprzedany", price:"—"}
-        ]
-      },
-      {
-        id: "rumia-10",
-        title: "Rumia — Dunikowskiego",
-        cover: "assets/render_front.jpg",
-        location: "Rumia",
-        status: "W sprzedaży",
-        price: "Cena na zapytanie",
-        area: "ok. 95–110 m²",
-        rooms: "4–5",
-        features: ["Ogródki i tarasy", "Miejsca postojowe", "Bardzo zielone otoczenie"],
-        description: "Kameralny zespół 6 segmentów w zabudowie szeregowej. Nowoczesna architektura, wysoki standard i funkcjonalne układy.",
-        gallery: [
-          "assets/render_front.jpg",
-          "assets/hero.jpg",
-          "assets/render_back.jpg",
-          "assets/plan_floor_1.jpg",
-          "assets/plan_floor_2.jpg",
-          "assets/site_plan.jpg"
-        ],
-        units: [
-          {id:"10A", area:"ok. 100 m²", garden:"tak", status:"Wolny", price:"123 456zł"},
+          {id:"10A/1", area:"ok. 53 m²", garden:"tak", balkon: "nie", status:"Wolny", price:"549 000zł"},
+          {id:"10A/2", area:"ok. 87 m²", garden:"nie", balkon: "tak", status:"Wolny", price:"549 000zł"},
           {id:"10B", area:"ok. 100 m²", garden:"tak", status:"Wolny", price:"na zapytanie"},
           {id:"10C", area:"ok. 100 m²", garden:"tak", status:"Wolny", price:"na zapytanie"},
           {id:"10D", area:"ok. 100 m²", garden:"tak", status:"Wolny", price:"na zapytanie"},
@@ -271,10 +244,10 @@
             <h4>Karta lokali</h4>
             <div class="table-wrap">
               <table class="table">
-                <thead><tr><th>Lokal</th><th>Powierzchnia</th><th>Ogródek</th><th>Status</th><th>Cena</th></tr></thead>
+                <thead><tr><th>Lokal</th><th>Powierzchnia</th><th>Ogródek</th><th>Balkon</th><th>Status</th><th>Cena</th></tr></thead>
                 <tbody>
                   ${inv.units.map(u => `<tr>
-                    <td>${u.id}</td><td>${u.area}</td><td>${u.garden}</td><td><span class="badge ${u.status==='Sprzedany'?'danger':'success'}">${u.status}</span></td><td>${u.price}</td>
+                    <td>${u.id}</td><td>${u.area}</td><td>${u.garden}</td><td>${u.balkon}</td><td><span class="badge ${u.status==='Sprzedany'?'danger':'success'}">${u.status}</span></td><td>${u.price}</td>
                   </tr>`).join('')}
                 </tbody>
               </table>
